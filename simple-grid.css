@@ -1,0 +1,525 @@
+/**
+*** SIMPLE GRID
+*** (C) ZACH COLE 2016
+**/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* UNIVERSAL */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+/*HEADER*/
+.navbar  {
+
+  background-color: #457b9d;
+  min-height: 50px;
+  border-bottom: 0.1px #ffd60a solid;
+  overflow: hidden;
+  position:fixed;
+  top:0%;
+  width:100%;
+  /* height:10%; */
+}
+
+.navbar .flex{
+  justify-content: space-between;
+  align-items: center;
+  height:70px;
+}
+
+
+/* ROOT FONT STYLES */
+
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+/* p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  /* line-height: 1.8; */
+
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+/* .para{
+  float:left; */
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
+  /* width:100%; */
+
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  /* width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+   */
+}
+
+.row {
+
+  width: 133%;
+}
+
+.row [class^="col"] {
+  /* float: left; */
+  /* margin: 0.5rem 2%;
+  min-height: 0.125rem; */
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 100%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+.row{
+  align-items: center;
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+/** TABLE **/
+.the-table{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: auto;
+  width: 95%;
+  margin: auto;
+}
+.wp-text {
+  text-align: center;
+  border-top: 3px #ffd60a solid;
+}
+
+.wp-text h2 {
+  margin: 12.5px 0;
+}
+
+.table-view {
+  text-decoration: none;
+}
+
+.other-periods {
+  text-align: left;
+  padding: 12.5px;
+}
+
+span.bold-text {
+  font-weight: bolder;
+  margin: 0 2.5px;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+  font-weight: bolder;
+}
+.current{
+  width: 130%;
+}
+.stockholm{
+  float:left;
+}
+.styled-table {
+  border-collapse: collapse;
+  
+  margin: 25px 0;
+ 
+  width: 230%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.styled-table thead tr {
+  background-color: #457b9d;
+  color: #001d3d;
+  border-bottom: 2.5px solid #ffd60a;
+  text-decoration: none;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #457b9d;
+}
+
+.underline {
+  text-decoration: underline #457b9d;
+}
+
+.row{
+  border-radius: 4pt;
+  /* margin-top: 100px; */
+  
+  
+  
+}
+.row1{
+  border-radius: 4pt;
+  margin-top: 100px;
+  width:133%;
+  height:300px;
+  
+  
+  
+  
+}
+.row11{
+  border-radius: 4pt;
+  /* margin-top: 60px; */
+  width:133%;
+  height:300px;
+  
+  
+  
+  
+}
+
+
+
+
+.sub-card{
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+
+  /* margin-top: 35px; */
+  
+ 
+  
+}
+.sub-card1{
+  /* margin-left: auto;
+  margin-right: auto; */
+  width:50%;
+  float:left;
+
+  /* margin-top: 35px; */
+  
+ 
+  
+}
+.sub-card2{
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  /* float: right; */
+  
+ 
+  
+}
+
+.columm1{
+  border-radius:4pt;
+  border-style: double;
+}
+h2{
+  font-family: 'Monoton',cursive;
+}
+h3{
+  font-family: 'Monoton',cursive;
+  text-align: center;
+}
+.row4 {
+  border-radius: 4pt;
+  
+
+}
+.row4 img{
+  float:right;
+  height:170px;
+  width:170px;
+}
+.row4{
+  display:flex;
+  width:133%;
+  
+  
+}
+.column1{
+  /* float:left; */
+  width:44.4%;
+}
+img{
+  width:270px;
+  height:270px;
+}
+.active{
+  background-color:#457b9d;
+  color: white;
+
+  text-align: center;
+  float:left;
+  width:350px;
+  border-radius:3pt;
+ 
+}
+@media (max-width:760px){
+  .sub-card1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height:100%;
+  
+    
+    
+   
+    
+  }
+  .row4{
+    flex-wrap: wrap;
+    width:100%;
+    
+    
+  }
+  .column1{
+    width:100%;
+  }
+  
+  .row{
+    width:99%
+  }
+  .styled-table{
+    width:150%;
+
+  }
+  .row1{
+    width:100%;
+    height:100%;
+  }
+  .row11{
+    width:100%;
+    height:400px;
+  }
+  .sub-card2{
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+  }
+  .sub-card{
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+  }
+  .current{
+
+    width: 100%;
+  }
+}
+img{
+  padding: 10px;
+}
+h1{
+  font-family: 'Rubik Microbe', cursive;
+  text-align: center;
+}
+

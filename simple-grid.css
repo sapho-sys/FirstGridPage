@@ -28,7 +28,7 @@ body {
   position:fixed;
   top:0%;
   width:100%;
-  /* height:10%; */
+  height:90px;
 }
 
 .navbar .flex{
@@ -119,10 +119,10 @@ h6 {
 /* ==== GRID SYSTEM ==== */
 
 .container {
-  /* width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-   */
+  width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  
 }
 
 .row {
@@ -325,6 +325,7 @@ th {
 }
 .stockholm{
   float:left;
+  
 }
 .styled-table {
   border-collapse: collapse;
@@ -393,11 +394,9 @@ th {
 
 
 .sub-card{
-  margin-left: auto;
-  margin-right: auto;
-  width:50%;
-
-  /* margin-top: 35px; */
+  margin-left:300px;
+  margin-right:300px;
+  width:133%;
   
  
   
@@ -466,6 +465,18 @@ img{
   float:left;
   width:350px;
   border-radius:3pt;
+  
+ 
+}
+.activer{
+  background-color:#457b9d;
+  color: white;
+
+  text-align: center;
+  float:left;
+  width:350px;
+  border-radius:3pt;
+  margin-top: 50px;
  
 }
 @media (max-width:900px){
@@ -513,11 +524,17 @@ img{
   .sub-card{
     margin-left: auto;
     margin-right: auto;
-    width:80%;
+    width:50%;
   }
   .current{
 
     width: 100%;
+  }
+  .activer{
+    width:120%;
+  }
+  .active{
+    width:100%;
   }
 }
 img{

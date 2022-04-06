@@ -468,7 +468,7 @@ img{
   border-radius:3pt;
  
 }
-@media (max-width:1020px){
+@media (max-width:900px){
   .sub-card1{
     margin-left: auto;
     margin-right: auto;

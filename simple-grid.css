@@ -479,7 +479,13 @@ img{
   margin-top: 50px;
  
 }
+.column1{
+  padding:10px;
+  border-radius: 5pt;
+}
+
 @media (max-width:900px){
+
   .sub-card1{
     margin-left: auto;
     margin-right: auto;

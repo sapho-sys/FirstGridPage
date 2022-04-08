@@ -371,7 +371,7 @@ th {
   border-radius: 4pt;
   margin-top: 100px;
   width:100%;
-  height:300px;
+  height:350px;
   
   
   
@@ -397,10 +397,10 @@ th {
 
 
 .sub-card{
-  margin-left:auto;
-  margin-right:auto;
+  margin-left:180px;
+  margin-right:180px;
   width:100%;
-  align-content: center;
+  
   
  
   
@@ -408,17 +408,17 @@ th {
 .sub-card1{
   /* margin-left: auto;
   margin-right: auto; */
-  width:50%;
-  float:left;
+  /* width:50%; */
+  /* float:left; */
 
   /* margin-top: 35px; */
   
  
   
 }
-/* .sub-card img {
-  float:right;
-} */
+.sub-card1 img {
+  float:left;
+}
 .sub-card2{
   margin-left: auto;
   margin-right: auto;
@@ -496,8 +496,9 @@ img{
   .sub-card1{
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
     height:100%;
+    padding: 2px;
   
     
     
@@ -507,6 +508,7 @@ img{
   .row4{
     flex-wrap: wrap;
     width:100%;
+    padding: 5px;
     
     
   }
@@ -515,7 +517,8 @@ img{
   }
   
   .row{
-    width:99%
+    width:100%;
+    padding: 5px;
   }
   .styled-table{
     width:150%;
@@ -524,16 +527,20 @@ img{
   .row1{
     width:100%;
     height:100%;
+    padding: 5px;
   }
   .row11{
     width:100%;
-    height:400px;
+    height:420px;
+    padding: 5px;
   }
   .sub-card2{
     margin-left: auto;
     margin-right: auto;
-    width:90%;
+    width:80%;
+    
   }
+ 
   .sub-card{
     margin-left: auto;
     margin-right: auto;
@@ -550,6 +557,7 @@ img{
     width:100%;
   }
 }
+
 img{
   padding: 10px;
 }

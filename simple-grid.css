@@ -16,7 +16,10 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 /*HEADER*/
 .navbar  {
@@ -31,10 +34,10 @@ body {
   height:90px;
 }
 
-.navbar .flex{
+.navbar {
   justify-content: space-between;
   align-items: center;
-  height:70px;
+  height:90px;
 }
 
 
@@ -118,22 +121,22 @@ h6 {
 
 /* ==== GRID SYSTEM ==== */
 
-.container {
+/* .container {
   width: 100%;
-  /* margin-left: auto;
-  margin-right: auto; */
-  
-}
+  margin-left: auto;
+  margin-right: auto; 
+   
+} */
 
 .row {
 
-  width: 133%;
+  width: 100%;
 }
 
 .row [class^="col"] {
-  /* float: left; */
-  /* margin: 0.5rem 2%;
-  min-height: 0.125rem; */
+  float: left; 
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
 }
 
 .col-1,
@@ -321,7 +324,7 @@ th {
   font-weight: bolder;
 }
 .current{
-  width: 130%;
+  width: 100%;
 }
 .stockholm{
   float:left;
@@ -367,7 +370,7 @@ th {
 .row1{
   border-radius: 4pt;
   margin-top: 100px;
-  width:133%;
+  width:100%;
   height:300px;
   
   
@@ -377,26 +380,27 @@ th {
 .row11{
   border-radius: 4pt;
   /* margin-top: 60px; */
-  width:133%;
-  height:300px;
+  width:100%;
+  height:345px;
   
   
   
   
 }
-/* .container{
-  margin-left: 50px;
-  margin-right:50px;
-  width:70%;
-} */
+.container{
+  margin-left: auto;
+  margin-right:auto;
+  width:100%;
+}
 
 
 
 
 .sub-card{
-  margin-left:300px;
-  margin-right:300px;
-  width:133%;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  align-content: center;
   
  
   
@@ -412,6 +416,9 @@ th {
  
   
 }
+/* .sub-card img {
+  float:right;
+} */
 .sub-card2{
   margin-left: auto;
   margin-right: auto;
@@ -445,7 +452,7 @@ h3{
 }
 .row4{
   display:flex;
-  width:133%;
+  float:left;
   
   
 }
@@ -474,9 +481,9 @@ img{
 
   text-align: center;
   float:left;
-  width:350px;
+  width:300px;
   border-radius:3pt;
-  margin-top: 50px;
+  margin-top: 80px;
  
 }
 .column1{
@@ -550,4 +557,9 @@ h1{
   font-family: 'Rubik Microbe', cursive;
   text-align: center;
 }
+/* h3{
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+} */
 

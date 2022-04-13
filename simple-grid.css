@@ -277,8 +277,10 @@ h6 {
 
 @media only screen and (min-width: 60em) { /* 960px */
   .container {
-    width: 75%;
+    width: 100%;
     max-width: 60rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /** TABLE **/
@@ -390,7 +392,7 @@ th {
 .container{
   margin-left: auto;
   margin-right:auto;
-  width:100%;
+  width:98%;
 }
 
 
@@ -463,6 +465,7 @@ h3{
 img{
   width:270px;
   height:270px;
+  border-radius: 20pt;
 }
 .active{
   background-color:#457b9d;
@@ -492,19 +495,33 @@ img{
 }
 
 @media (max-width:900px){
+  html,
+  body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* overflow: hidden; */
+}
+
 
   .sub-card1{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     height:100%;
-    padding: 2px;
-  
-    
-    
-   
+    padding: 2px;  
+  }
+  .navbar{
+    width:100%;
     
   }
+  
   .row4{
     flex-wrap: wrap;
     width:100%;
@@ -513,7 +530,8 @@ img{
     
   }
   .column1{
-    width:100%;
+    width:115%;
+    /* padding:5px; */
   }
   
   .row{
@@ -554,6 +572,10 @@ img{
     width:120%;
   }
   .active{
+    width:100%;
+  }
+  .navbar{
+    overflow: hidden;
     width:100%;
   }
 }
